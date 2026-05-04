@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'roboto',sans-serif;
+}
+/* Header starts */
+.material-icons{
+    color: rgb(15, 15, 15);
+}
+.Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0 16px;
+    /* background-color: blue; */
+}
+.Header i{
+    cursor: pointer;
+}
+.Header-left{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    width: auto;
+    height: 100%;
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+}
+.menu-button{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.menu-button:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+.Header-left img{
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    cursor: pointer;
+    margin-top: 8px;
+    
+}
+.Header-left i{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+.Header-search{
+    display: flex;
+    align-items: center;
+}
+.Header-search form{
+    display: flex;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    overflow: hidden;
+    background-color: #ffffff;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.05);
+    margin-left: 32px;
+    padding: 0 4px 0 16px;
+}
+.Header-search button{
+    height: 100%;
+    background-color: #f8f8f8;
+    border: none;
+    border-left: 1px solid #ccc;
+    padding: 0 14px;
+}
+.Header-search button:hover{
+    background-color: #f0f0f0;
+}
+.Header-search input{
+    width: 536px;
+    padding: 13px;
+    border: none;
+    outline: none;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+
+    font-size: 16px;
+    font-weight: 500;
+    /* font-style: italic; */
+}
+.Header-search input::placeholder{
+    color: #606060;
+    font-size: 16px;
+    font-weight: 400;
+    /* font-style: italic; */
+    opacity: 2;
+    
+}
+.search-mic{
+    background-color: #f5f4f4;
+    margin-left: 10px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+}
+.search-mic i{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.search-mic:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+.Header-icons{
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+.add{
+    height: 36px;
+    width: 100px;
+    padding: 0 16px 0 12px;
+    gap: 6px;
+    border-radius: 40px;
+    background-color: #f5f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+    cursor: pointer;
+}
+.add i{
+    padding: 0;
+    font-size: 25px;
+    font-weight: 50;
+}
+.notifications i, .account i{
+    font-size: 30px;
+}
+.notifications, .account {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.add:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+.notifications:hover{
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 50%;
+}
+.account:hover{
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 50%;
+}
+
+/* Main body starts here */
+.Main-body{
+    height: calc(100vh - 50px);
+    overflow: auto;
+    display: flex;
+}
+.sidebar{
+    height: 100%;
+    width: 230px;
+    overflow: scroll;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+}
+hr{
+    border: 0;
+    height: 1px;
+    background-color: #e5e5e5;
+    margin: 12px 0px;
+}
+.sidebar-category{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    height: 40px;
+    width: 100%;
+    padding: 0 12px;
+}
+.sidebar-category:hover{
+    background-color: #f5f4f4;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.sidebar-category i{
+    width: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.sidebar-category svg{
+    width: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.subscribed{
+    display: flex;
+    height: 40px;
+    width: 100%;
+    align-items: center;
+    padding-left:12px;
+}
+.subscribed:hover{
+    background-color: #f5f4f4;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.subscribed img{
+    border-radius: 50%;
+    justify-content: center;
+    text-align: center;
+}
+.subscribed span{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    padding-left: 30px;
+}
+
+
+
+
+.content-wrapper{
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+.recommendations{
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 24px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.recommendations::-webkit-scrollbar {
+    display: none;
+}
+.recommend-item{
+    padding: 6px 12px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    font-weight: 450;
+    font-size: 14px;
+}
+.recommend-item.active{
+    background-color: #0f0f0f;
+    color: white;
+}
+
+
+/* Videos Grid */
+.video-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 16px;
+    row-gap: 40px;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    overflow-y: auto;
+}
+
+.video-card{
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    padding: 16px;
+    transition: background-color 0.2s;
+}
+.video-card:hover{
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+.video-thumbnail img{
+    border-radius: 12px;
+    margin-bottom: 8px;
+    display: block;
+    width: 100%;
+    object-fit: cover;    
+}
+.video-thumbnail:hover{
+    cursor: pointer ;
+}
+.author img{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    /* margin-right: 12px; */
+    flex-shrink: 0;
+}
+.video-details{
+    display: flex;
+    gap: 10px;
+}
+.channel{
+    display: flex;
+    gap: 6px;
+}
+.channel svg{
+    fill: #606060;
+}
+.discription{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 1;
+    cursor: pointer;
+    /* background-color: blue; */
+}
+.discription svg{
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    padding: 4px;
+}
+.discription svg:hover{
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+}
+.discription h3{
+    flex: 1;
+    font-size: 16px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.otherdis a,.otherdis span{
+    display: flex;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #606060;
+    font-size: 14px;
+}
+strong{
+    color: black;
+}
+.title a:hover{
+    color: #0f0f0f;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin-top: 15px;
+}
+.buttons button{
+    border: none;
+    border-radius: 40px;
+}
+.Watch{
+    background-color: rgba(0, 0, 0, 0.05);
+    height: 40px;
+    width: 180px;
+}
+.Sign{
+    background-color: #0f0f0f;
+    color: white;
+    height: 40px;
+    width: 180px;   
+}
+.Ads{
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    padding: 16px;
+    transition: background-color 0.2s;
+}
+.Ads:hover{
+    background-color: transparent;
+    /* border: 1px solid rgba(0, 0, 0, 0.05); */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
